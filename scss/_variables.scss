@@ -1,0 +1,35 @@
+/* =================
+        Colors
+================= */
+
+
+/*  Primary  */
+
+$dark-blue: hsl(233, 26%, 24%) !default;
+$lime-green: hsl(136, 65%, 51%) !default;
+$bright-cyan: hsl(192, 70%, 51%) !default;
+
+/*  Neutral  */
+
+$grayish-blue: hsl(233, 8%, 62%) !default;
+$light-grayish-blue: hsl(220, 16%, 96%) !default;
+$very-light-gray: hsl(0, 0%, 98%) !default;
+$white: hsl(0, 0%, 100%);
+
+/* ======================
+        Typography 
+======================= */
+
+
+/*  Body Copy  */
+
+$font-size: 1.125rem !default;
+
+/*  Font  */
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+$f-family: "Public Sans",
+sans-serif !default;
+$fw-300: 300 !default;
+$fw-400: 400 !default;
+$fw-700: 700 !default;
