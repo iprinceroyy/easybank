@@ -47,10 +47,10 @@
 }
 @media (min-width: 992px) {
   .nav-menu {
-    top: 0;
-    flex-direction: row;
-    align-items: center;
-    background-color: #fff;
+    position: relative;
+    width: 0;
+    background-color: transparent;
+    justify-content: center;
   }
 }
 
@@ -64,7 +64,6 @@
 }
 @media (min-width: 992px) {
   .nav-toggler {
-    z-index: 0;
     display: none;
   }
 }
@@ -83,13 +82,16 @@
 }
 @media (min-width: 992px) {
   .nav-list {
-    all: revert;
+    margin: 0;
+    height: 0;
+    flex-direction: row;
   }
 }
 
 .nav-item {
   list-style-type: none;
 }
+
 .nav-menu .nav-links {
   color: #2d314d;
   text-transform: capitalize;
@@ -98,6 +100,7 @@
 @media (min-width: 992px) {
   .nav-menu .nav-links {
     color: #9698a6;
+    padding: 0 1rem;
   }
 }
 
@@ -125,7 +128,7 @@
   background-image: url("../assets/images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  background-position: center top -25vh;
 }
 @media (min-width: 992px) {
   .intro {
@@ -137,6 +140,8 @@
 }
 
 .intro .title {
+  padding: 0 2rem;
+  text-align: center;
   flex-basis: 40%;
 }
 @media (min-width: 992px) {
@@ -149,12 +154,14 @@
 .title h1 {
   font-size: 3rem;
   font-weight: 400;
+  color: #2d314d;
   letter-spacing: 1px;
 }
 
 .title p {
   color: #9698a6;
   padding: 2rem 0;
+  line-height: 1.5;
 }
 
 .intro button {

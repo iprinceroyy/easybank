@@ -15,10 +15,5 @@ btn.addEventListener('click', () => {
     }
 
     navIsToggled = navIsToggled ? false : true;
-});
 
-window.addEventListener('resize', function() {
-    if (this.innerWidth > 992) {
-        this.document.body.style.overflowY = 'auto';
-    }
 });

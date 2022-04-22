@@ -14,6 +14,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
+    //position: relative;
     @media (min-width: 992px) {
         padding: 0.5rem 10rem;
     }
@@ -31,10 +32,10 @@
     background-color: rgba(#000, 0.3);
     transition: top 300ms ease-out 80ms;
     @media (min-width: 992px) {
-        top: 0;
-        flex-direction: row;
-        align-items: center;
-        background-color: #fff;
+        position: relative;
+        width: 0;
+        background-color: transparent;
+        justify-content: center;
     }
 }
 
@@ -46,7 +47,6 @@
     position: relative;
     z-index: 2;
     @media (min-width: 992px) {
-        z-index: 0;
         display: none;
     }
 }
@@ -63,13 +63,14 @@
     border-radius: 0.3rem;
     border-style: none;
     @media (min-width: 992px) {
-        all: revert;
+        margin: 0;
+        height: 0;
+        flex-direction: row;
     }
 }
 
 .nav-item {
     list-style-type: none;
-    @media (min-width: 992px) {}
 }
 
 .nav-menu .nav-links {
@@ -78,6 +79,7 @@
     text-decoration: none;
     @media (min-width: 992px) {
         color: var.$grayish-blue;
+        padding: 0 1rem;
     }
 }
 
@@ -107,7 +109,7 @@
     background-image: url("../assets/images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    background-position: center top -25vh;
     @media (min-width: 992px) {
         height: 85vh;
         flex-direction: row-reverse;
@@ -117,6 +119,8 @@
 }
 
 .intro .title {
+    padding: 0 2rem;
+    text-align: center;
     flex-basis: 40%;
     @media (min-width: 992px) {
         flex-basis: 40%;
@@ -127,12 +131,14 @@
 .title h1 {
     font-size: 3rem;
     font-weight: var.$fw-400;
+    color: var.$dark-blue;
     letter-spacing: 1px;
 }
 
 .title p {
     color: var.$grayish-blue;
     padding: 2rem 0;
+    line-height: 1.5;
 }
 
 .intro button {
