@@ -91,16 +91,26 @@
 .nav-item {
   list-style-type: none;
 }
+<<<<<<< HEAD
+.nav-menu a {
+  color: hsl(233deg, 26%, 24%);
+=======
 
 .nav-menu .nav-links {
   color: #2d314d;
+>>>>>>> aa2e77217e2746b4fd9a7bd417726c04fa01057c
   text-transform: capitalize;
   text-decoration: none;
 }
 @media (min-width: 992px) {
+<<<<<<< HEAD
+  .nav-menu a {
+    color: hsl(233deg, 8%, 62%);
+=======
   .nav-menu .nav-links {
     color: #9698a6;
     padding: 0 1rem;
+>>>>>>> aa2e77217e2746b4fd9a7bd417726c04fa01057c
   }
 }
 
@@ -110,9 +120,9 @@
 @media (min-width: 992px) {
   .navbar > button {
     font-size: 1rem;
-    color: white;
+    color: hsl(0deg, 0%, 100%);
     padding: 0.75rem 1.5rem;
-    background-image: linear-gradient(135deg, #31d35c, #2bb7da);
+    background-image: linear-gradient(135deg, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
     border-style: none;
     border-radius: 25px;
     display: block;
@@ -124,7 +134,7 @@
   font-family: "Public Sans", sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: #fafafa;
+  background-color: hsl(0deg, 0%, 98%);
   background-image: url("../assets/images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -159,16 +169,16 @@
 }
 
 .title p {
-  color: #9698a6;
+  color: hsl(233deg, 8%, 62%);
   padding: 2rem 0;
   line-height: 1.5;
 }
 
 .intro button {
   font-size: 1rem;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   padding: 0.75rem 1.5rem;
-  background-image: linear-gradient(135deg, #31d35c, #2bb7da);
+  background-image: linear-gradient(135deg, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
   border-style: none;
   border-radius: 25px;
 }
@@ -181,6 +191,11 @@
   .mockup {
     height: 90%;
   }
+}
+
+.hello {
+  background-color: rgb(232, 232, 228);
+  padding: 6rem 3rem 2rem 9rem;
 }
 
 /*# sourceMappingURL=index.css.map */
