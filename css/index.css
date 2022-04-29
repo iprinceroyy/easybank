@@ -22,12 +22,6 @@
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,6 +45,14 @@
   background-color: rgba(0, 0, 0, 0.3);
   transition: top 300ms ease-out 80ms;
 }
+@media (min-width: 992px) {
+  .nav-menu {
+    position: relative;
+    width: 0;
+    background-color: transparent;
+    justify-content: center;
+  }
+}
 
 .show {
   top: 9%;
@@ -59,6 +61,11 @@
 .nav-toggler {
   position: relative;
   z-index: 2;
+}
+@media (min-width: 992px) {
+  .nav-toggler {
+    display: none;
+  }
 }
 
 .nav-list {
@@ -69,22 +76,41 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #fff;
+  background-color: white;
   border-radius: 0.3rem;
   border-style: none;
+}
+@media (min-width: 992px) {
+  .nav-list {
+    margin: 0;
+    height: 0;
+    flex-direction: row;
+  }
 }
 
 .nav-item {
   list-style-type: none;
 }
+<<<<<<< HEAD
 .nav-menu a {
   color: hsl(233deg, 26%, 24%);
+=======
+
+.nav-menu .nav-links {
+  color: #2d314d;
+>>>>>>> aa2e77217e2746b4fd9a7bd417726c04fa01057c
   text-transform: capitalize;
   text-decoration: none;
 }
 @media (min-width: 992px) {
+<<<<<<< HEAD
   .nav-menu a {
     color: hsl(233deg, 8%, 62%);
+=======
+  .nav-menu .nav-links {
+    color: #9698a6;
+    padding: 0 1rem;
+>>>>>>> aa2e77217e2746b4fd9a7bd417726c04fa01057c
   }
 }
 
@@ -112,7 +138,7 @@
   background-image: url("../assets/images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  background-position: center top -25vh;
 }
 @media (min-width: 992px) {
   .intro {
@@ -124,6 +150,8 @@
 }
 
 .intro .title {
+  padding: 0 2rem;
+  text-align: center;
   flex-basis: 40%;
 }
 @media (min-width: 992px) {
@@ -136,12 +164,14 @@
 .title h1 {
   font-size: 3rem;
   font-weight: 400;
+  color: #2d314d;
   letter-spacing: 1px;
 }
 
 .title p {
   color: hsl(233deg, 8%, 62%);
   padding: 2rem 0;
+  line-height: 1.5;
 }
 
 .intro button {
