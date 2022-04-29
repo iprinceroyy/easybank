@@ -36,7 +36,7 @@ Users should be able to:
 
 ## Process
 
-### Built with
+### Built withgit 
 
 -   Semantic HTML5 markup
 -   CSS custom properties
@@ -57,7 +57,7 @@ Welcomes you all to contribute to this project
 
 ### Issue
 
-Feel free to submit issues and enhancement requets
+Feel free to submit issues and enhancement request
 
 ### Contributing Guidelines
 
