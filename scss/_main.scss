@@ -1,1 +1,130 @@
 @use "variables" as var;
+@mixin para-theme {
+    font-size: 1rem;
+    color: var.$grayish-blue;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+    @media (min-width: 992px) {
+        text-align: start;
+    }
+}
+
+.feature-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    background-color: var.$light-grayish-blue;
+    h2 {
+        font-size: 3rem;
+        color: var.$dark-blue;
+        font-weight: var.$fw-400;
+        margin: 1rem 0;
+        @media (min-width: 992px) {
+            text-align: start;
+        }
+    }
+    >p {
+        @include para-theme;
+        @media (min-width: 992px) {
+            padding-right: 50%;
+        }
+    }
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 992px) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 992px) {
+        align-items: flex-start;
+    }
+    img {
+        width: 5rem;
+        margin: 1.5rem 0;
+    }
+    h3 {
+        color: var.$dark-blue;
+        font-weight: var.$fw-400;
+    }
+    p {
+        @include para-theme;
+    }
+}
+
+
+/*  Blog  */
+
+.blog-section {
+    background-color: var.$very-light-gray;
+    padding: {
+        top: 4rem;
+        bottom: 4rem;
+    }
+}
+
+.blog-section h2 {
+    font-size: 2rem;
+    font-weight: var.$fw-400;
+    color: var.$dark-blue;
+    text-align: center;
+    margin: 1.5rem 0;
+    @media (min-width: 992px) {
+        font-size: 3rem;
+        text-align: start;
+    }
+}
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-weight: var.$fw-400;
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
+}
+
+.blog {
+    border-radius: 10px;
+    background-color: var.$white;
+}
+
+.blog {
+    img {
+        border-top: {
+            left-radius: 10px;
+            right-radius: 10px;
+        }
+        width: 100%;
+        height: 12.3125rem;
+        object-fit: cover;
+    }
+    blockquote {
+        padding: 1.5rem;
+        figcaption {
+            font-size: 1rem;
+            color: var.$grayish-blue;
+        }
+        h3 {
+            color: var.$dark-blue;
+            font-weight: var.$fw-400;
+            padding-right: 5%;
+            margin: 0.5rem 0;
+        }
+        p {
+            color: var.$grayish-blue;
+            margin: 0.5rem 0;
+            text-overflow: ellipsis;
+        }
+    }
+}

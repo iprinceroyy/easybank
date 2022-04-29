@@ -1,1 +1,94 @@
 @use "variables" as var;
+.footer-section {
+    background-color: var.$dark-blue;
+    padding: {
+        top: 2rem;
+        bottom: 2rem;
+    }
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 992px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+}
+
+.footer-section .logo img {
+    filter: brightness(0) invert(1);
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0;
+    width: 14rem;
+    justify-content: space-between;
+    img {
+        width: 1.8rem;
+    }
+}
+
+.footer-list {
+    list-style-type: none;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    a {
+        color: var.$light-grayish-blue;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+    @media (min-width: 992px) {
+        align-items: stretch;
+    }
+}
+
+@mixin button-theme {
+    font-size: 1rem;
+    color: var.$white;
+    padding: 0.75rem 1.5rem;
+    background-image: linear-gradient( 135deg, var.$lime-green, var.$bright-cyan);
+    border-style: none;
+    border-radius: 25px;
+}
+
+.item-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 992px) {
+        justify-content: space-between;
+    }
+}
+
+.item-2 {
+    @media (min-width: 992px) {
+        align-self: center;
+        flex-wrap: wrap;
+    }
+}
+
+.item-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer button {
+    @include button-theme;
+    margin: 2rem 0;
+}
+
+.copyright p {
+    color: var.$grayish-blue;
+}

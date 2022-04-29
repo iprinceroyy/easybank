@@ -14,7 +14,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
-    //position: relative;
     @media (min-width: 992px) {
         padding: 0.5rem 10rem;
     }
@@ -108,23 +107,35 @@
     background-color: var.$very-light-gray;
     background-image: url("../assets/images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top -25vh;
+    background-size: contain;
+    background-position: center top -7.5vh;
+    padding-bottom: 4rem;
     @media (min-width: 992px) {
         height: 85vh;
         flex-direction: row-reverse;
         background-image: url("../assets/images/bg-intro-desktop.svg");
+        background-size: cover;
         background-position: left 42.5vw top -45vh;
+    }
+}
+
+
+/* intro image */
+
+.mockup img {
+    object-position: right 0 top -23vh;
+    @media (min-width: 992px) {
+        object-position: right -8vw top -17vh;
     }
 }
 
 .intro .title {
     padding: 0 2rem;
     text-align: center;
-    flex-basis: 40%;
     @media (min-width: 992px) {
         flex-basis: 40%;
         padding: 15rem 0;
+        text-align: start;
     }
 }
 
@@ -143,14 +154,4 @@
 
 .intro button {
     @include button-theme;
-}
-
-
-/* intro image */
-
-.mockup {
-    height: 50%;
-    @media (min-width: 992px) {
-        height: 90%;
-    }
 }
